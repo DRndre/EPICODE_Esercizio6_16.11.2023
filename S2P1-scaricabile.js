@@ -88,8 +88,8 @@ if (number1 === 8 || number2 === 8) {
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
-C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
-Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
+C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari
+a 10). Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 
 
 let totalShoppingCart = 100
@@ -138,8 +138,24 @@ console.log("Totale da addebitare: €" + totaleAddebitato);
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let isMale = true;
+let gender = isMale ? "male" : "female";
+
+console.log (gender);
 
 /* ESERCIZIO EXTRA 5
-  Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
+  Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto
+  la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+
+for (let numero = 1; numero <= 100; numero++) {
+  if (numero % 3 === 0 && numero % 5 === 0) {
+      console.log("FizzBuzz");
+  } else if (numero % 3 === 0) {
+      console.log("Fizz");
+  } else if (numero % 5 === 0) {
+      console.log("Buzz");
+  } else {
+      console.log(numero);
+  }
+}
